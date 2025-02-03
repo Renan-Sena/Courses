@@ -1,7 +1,7 @@
 import User from "./User.js";
 
 export default class Teacher extends User {
-    constructor(name, email, birth, role = 'admin', active = 'true') {
+    constructor(name, email, birth, role = 'teacher', active = 'true') {
         super(name, email, birth, role, active)
     }
 
@@ -10,7 +10,7 @@ export default class Teacher extends User {
     }
 }
 
-const newTeacher = new Teacher('Ana', 'A@A.com', '2024-01-01')
+// const newTeacher = new Teacher('Ana', 'A@A.com', '2024-01-01')
 // console.log(newTeacher);
-console.log(newTeacher.aproveStudent('Juliana', 'Computer Engineering'));
+// console.log(newTeacher.aproveStudent('Juliana', 'Computer Engineering'));
 // console.log(newTeacher.showInfos());
